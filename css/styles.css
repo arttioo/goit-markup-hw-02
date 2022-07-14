@@ -1,0 +1,236 @@
+:root {
+--main-text-color:#212121;
+--additional-text:#757575;
+--background-light:#F5F4FA;
+--background-dark:#2F303A;
+--accent-color:#2196F3;
+--contact-text:rgba(255, 255, 255, 0.6);
+}
+body {
+    font-family: roboto,sans-serif;
+    color:var(--main-text-color);
+}
+.list {
+    list-style: none;
+}
+.underln {
+    text-decoration: none; 
+}
+.pointer{
+    cursor: pointer;
+}
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* -----------HEADER------------- */
+
+.contact-nav .underln,
+.address-list .underln {
+    color:var(--additional-text);  
+}
+.site-nav .underln {
+    color:var(--main-text-color);       
+}
+.logo-web {
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--accent-color);
+}
+.logo-studio {
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.site-nav .underln:hover,
+.site-nav .underln:focus,
+.contact-nav .underln:hover,
+.contact-nav .underln:focus {
+    color:var(--accent-color);
+}
+
+.site-nav .link-current {
+    color:var(--accent-color);
+}
+
+.site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+.contact-nav
+ {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color:var(--additional-text)
+}
+
+/* -------HERO------- */
+
+.hero {
+    background-color: var(--background-dark);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+}
+.hero-btn{
+    font-family: roboto,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background:var(--accent-color);
+}
+
+/* ------Features------- */
+
+.feature-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.feature-content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color:var(--additional-text)
+}
+
+/* ---Team------ */
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--additional-text)
+}
+
+/* --------Portfolio--------- */
+
+.port-btn{
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--main-text-color);
+    background:var(--background-light);
+}
+.port-btn:hover,
+.port-btn:focus{
+    color: #FFFFFF;
+    background-color:var(--accent-color) ;
+}
+.portfolio-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--additional-text)
+}
+/* -----------FOOTER-------- */
+
+.logo-studio-footer {
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+/* -----Address----- */
+
+.address-list .underln {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:var(--contact-text)
+}
+
+.address-list .underln:hover,
+.address-list .underln:focus {
+    color: var(--accent-color);
+}
+.address-location {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:#FFFFFF 
+}
+.address{
+    font-style: normal;
+}
+
+.footer {
+    background-color:var(--background-dark);
+}
+/* цвет основного текста #212121 */
+/* дополнительного текста #757575 */
+/* бэкграунд светлосерый #F5F4FA  */
+/* бэкграунд темный #2F303A */
+/* акцент #2196F3 */
+/* текст в контактах футера rgba(255, 255, 255, 0.6) */
