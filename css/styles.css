@@ -5,10 +5,15 @@
 --background-dark:#2F303A;
 --accent-color:#2196F3;
 --contact-text:rgba(255, 255, 255, 0.6);
+--white:#FFFFFF;
+--black:#000000;
+
+
 }
 body {
-    font-family: roboto,sans-serif;
+    font-family: Roboto,sans-serif;
     color:var(--main-text-color);
+    background-color: var(--white);
 }
 .list {
     list-style: none;
@@ -34,7 +39,7 @@ body {
 
 /* -----------HEADER------------- */
 
-.contact-nav .underln,
+.contact-header .underln,
 .address-list .underln {
     color:var(--additional-text);  
 }
@@ -57,13 +62,14 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--black);
 }
 
 .site-nav .underln:hover,
 .site-nav .underln:focus,
-.contact-nav .underln:hover,
-.contact-nav .underln:focus {
+.contact-header .underln:hover,
+.contact-header .underln:focus
+{
     color:var(--accent-color);
 }
 
@@ -77,7 +83,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
 }
-.contact-nav
+.contact-header
  {
     font-weight: 500;
     font-size: 14px;
@@ -98,11 +104,11 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white);
     
 }
 .hero-btn{
-    font-family: roboto,sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -110,8 +116,9 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color:var(--white);
     background:var(--accent-color);
+    border: none;
 }
 
 /* ------Features------- */
@@ -133,10 +140,13 @@ body {
 
 /* ---Team------ */
 
+.team{
+    background-color: var(--background-light);
+}
 .team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.16
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -159,7 +169,7 @@ body {
 /* --------Portfolio--------- */
 
 .port-btn{
-    font-family: roboto,sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -169,12 +179,14 @@ body {
     letter-spacing: 0.03em;
     color:var(--main-text-color);
     background:var(--background-light);
+    border: none;
 }
 .port-btn:hover,
 .port-btn:focus{
-    color: #FFFFFF;
+    color: var(--white);
     background-color:var(--accent-color) ;
 }
+
 .portfolio-name {
     font-weight: 700;
     font-size: 18px;
@@ -197,7 +209,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color:var(--white);
 }
 
 /* -----Address----- */
@@ -219,7 +231,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color:#FFFFFF 
+    color:var(--white); 
 }
 .address{
     font-style: normal;
